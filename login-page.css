@@ -1,0 +1,127 @@
+ * {
+     padding: 0;
+     
+    }
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background :linear-gradient(45deg ,blue , violet);
+        background-repeat: no-repeat;
+    }
+.container {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-left: 140px;
+ }
+ .login-left {
+    /* background-color: #fff; */
+    margin-left: 90px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ .login-header {
+    width: 350px;
+    text-align: center;
+ }
+ .login-header h1 {
+    color : 
+ }
+ .login-header p {
+    opacity: 0.6;
+ }
+ form {
+    width: 350px;
+ }
+ input[type='text'],
+ input[type='password']{
+    margin: 16px 0;
+    width: 100%;
+    border-radius: 10px;
+    padding: 8px;
+ }
+ .sign-in-btn {
+    background :linear-gradient(45deg ,blue ,violet);
+    width: 368px;
+    border-radius: 10px;  
+    margin:  16px 0 ;
+    padding: 8px; 
+    cursor: pointer;
+ }
+ .login-footer a {
+    text-decoration: none;
+    color: black;
+    border :1px solid #ccc ;
+    border-radius: 10px;
+    padding :16px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    margin: 32px 0 32px 22px;
+    width: 300px;
+ } 
+ .login-footer a svg {
+    position: relative;
+    top: 6px;
+    margin-right: 6px;
+ }
+ .login-footer a:hover {
+    background :linear-gradient(45deg ,violet , blue);
+ }
+ .login-right {
+    background: url('/img/paris.jpg');
+    margin-right: 190px;
+    display: none;
+ }
+@media (max-width :1160px) {
+    body {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+        margin-left: 0;
+  
+    }
+    .login-right {
+        display: none;
+    }
+    .login-left {
+        width: 100%;
+        padding: 0 64px;
+    }
+}
+@media (max-width :933px) {
+    .container {
+        width: 80%;
+    }
+    .login-right {
+    }
+    .login-left {
+        background : none;
+        margin-left: 0;
+    }
+    .login-footer a {
+        width: 300px;
+        padding-right: 50px;
+        margin: 16px 0 ;
+        margin-left: 16px;
+        text-align: center;
+        display: block;
+        
+    }
+}

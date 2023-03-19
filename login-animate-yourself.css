@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #23242a;
+    min-height: 100vh;
+    min-width: 400px;
+}
+.box {
+    position: relative;
+    min-width: 380px;
+    height: 420px;
+    background: #1c1c1c;
+    overflow: hidden;
+}
+.box::before {
+    position: absolute;
+    content: '';
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.box::after {
+    position: absolute;
+    content: '';
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+.form {
+    position: absolute;
+    padding: 40px;
+    background: #28292d;
+    inset: 2px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+.form h2 {
+    color: #45f3ff;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.input-box {
+    margin: 32px 0;
+    position: relative;
+}
+.input-box input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 12px;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    border-bottom: 1px solid #45f3ff;
+    transition: .5s;
+    z-index: 12;
+}
+.input-box span {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    color: #8f8f8f;
+    transition: 0.5s;
+}
+.input-box input:valid ~ span,
+.input-box input:focus ~ span {
+    transform: translateX(-8px) translateY(-34px);
+    font-size: 13px;
+    color: #45f3ff
+}
+input:focus {
+    border-radius: 8px;
+    background: #45f3ff;
+}
+.link {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+.link a {
+    color: #8f8f8f;
+    text-decoration: none;
+    transition: .3s;
+}
+.link a:hover {
+    color: #45f3ff;
+}
+.login-btn {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: .5s;
+}
+.login-btn:hover {
+    background: #45f3ff;
+    cursor: pointer;
+}

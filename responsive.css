@@ -1,0 +1,135 @@
+* {
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: url(/img/pool_and_girl.jpeg) top center /cover no-repeat;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.container-nav {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+}
+.container-nav h1 {
+    cursor: pointer;
+    color: #eee;
+}
+.nav {
+    display :flex;
+    margin-top: 24px;
+}
+
+.nav li { 
+    padding: 0 8px;
+    list-style-type: none; 
+}
+.nav li:hover a {
+    background-color: #ccc;
+    color: rgb(60, 59, 59);
+}
+.nav a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 16px;
+}
+.container-nav button  {
+    font-size: 18px;
+    padding: 0 50px;
+    border : 1px solid #ccc;
+    border-radius: 15px;
+    margin-top: 6px;
+    background-color: orange;
+}
+.container-nav button:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+.nav-bar span {
+    color: #eee;
+    font-size: 40px;
+    line-height: 60px;
+    display: none;
+    margin-right: 22px;
+    padding: 0 12px;
+    
+}
+.nav-bar span:hover {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+.text-decrip {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text-decrip h1 {
+     color: rgb(54, 46, 46);
+     font-size: 50px;
+     letter-spacing: 8px;
+}
+.text-decrip p {
+    width: 400px;
+    font-size: 20px;
+    color: #bad3dc;
+    text-align: justify;
+    line-height: 1.4;
+}
+@media (max-width :1239px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+@media (max-width :1050px) {
+    .container-nav h1 {
+        display: none;
+    }
+}
+@media (max-width :780px) {
+    .container-nav {
+        display: flex;
+        margin-right: 40%;;
+    }
+    .nav a {
+        display: none;
+    }
+    .nav-bar span {
+        display: block;
+    }   
+    button {
+        margin-right: 65%;
+    }
+
+}
+@media (max-width: 600px) {
+
+    .container-nav {
+        width: 100%;
+        margin-right: 65%;
+    }
+    .container {
+        max-width: 450px;
+        margin-right: 50px;
+    }
+}
+
+

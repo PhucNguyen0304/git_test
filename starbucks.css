@@ -1,0 +1,306 @@
+* { 
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+     /* min-width: 518px; */
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.grid.wide {
+    overflow: hidden;
+    max-width: 1400px;
+    margin-top: 32px;
+}
+.header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+.header-nav a {
+    text-decoration: none;
+    color: #000000DE;
+    margin: 0 24px;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+.header-nav a:hover {
+    color: #00754a;
+} 
+.starbucks-logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 22px;
+}
+.header-button.open {
+    display: flex;
+    animation: fadeIn ease 1s;
+}
+.header-button {
+    display: flex;
+    align-items: center;
+}
+.header-button p {
+    font-weight: 700;
+}
+.header-button p:hover {
+    cursor: pointer;
+    color: #00754a;
+}
+.header-button span {
+    color: black;
+}
+.header-button button {
+    margin: 0 16px;
+    padding: 8px 12px;
+    border-radius: 15px;
+}
+.header-button .sign-in {
+    margin-left: 12px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.header-button .sign-in:hover {
+    background-color: #ccc;
+    transition: all 2s ease;
+}
+.header-button .join-now {
+    background-color: black;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+.header-location {
+    width: 200px;
+}
+.header-location p {
+    width: 100%;
+}
+.menu {
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    display: none;
+}
+.menu span {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.menu:hover {
+    background-color: #eee;
+    border-radius :50%;
+}
+.baner {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    margin-top: 32px;
+}
+.baner .decription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    color :black;
+    background-color: #1e3932;
+    text-align: center;
+}
+.baner h1 ,
+.baner h2 {
+    margin-left: 10%;
+}
+.baner .col {
+    padding: 0;
+}
+.baner h1 {
+    font-size: 50px;
+}
+.baner p {
+    font-size: 24px;
+    width: 70%;
+    margin-left: 10%;
+    letter-spacing: 1px;
+}
+.baner img {
+    width: 100%;
+    height: 100%;
+}
+.baner button {
+    padding: 7px 16px;
+    border-color:black ;
+    border-radius: 15px;
+    background: none;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+}
+.baner button:hover {
+    cursor: pointer;
+}
+.baner-1 h2 {
+    font-size: 30px;
+    color: #fff;
+}
+.baner-1 p {
+    color: #fff;
+    letter-spacing: 1px;
+    width: 60%;
+    font-size: 19px;
+}
+.baner-1 button {
+    border: 1px solid #fff;
+    color: #fff;
+}
+.baner-2 .decription {
+    background-color: #ffc519;
+}
+.baner-3 .decription {
+    background-color: #f6bfd9;
+}
+.baner-4 .decription {
+    background-color: #fff4d4;;
+}
+.baner-5 .decription {
+    background-color:#d4e9e2;
+}
+.baner-6 .decription {
+    background-color:   #d4e9e2;;
+}
+.baner-decription {
+     width: 100vw;
+     margin: 0 auto;
+     margin-top: 50px;
+     border-bottom: 3px solid #ccc;
+     padding-bottom: 32px;
+}
+.baner-decription p {
+    text-align: center;
+    width: 60%;
+    margin: 16px auto;
+    line-height: 32px;
+}
+.baner-decription a {
+    color: black;
+}
+.col.l-2 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+}
+.col.l-2 a {
+    text-decoration: none;
+    color: #00000094;
+    line-height: 46px;
+}
+.col.l-2 a:hover {
+    color: rgba(0,0,0,.87);
+}
+.social-icon {
+    padding-top: 50px;
+    border-top : 3px solid #ccc;
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+}
+.social-icon a {
+    margin: 0;
+    width: 40px;
+    text-decoration: none;
+    color: black;
+    margin: 0 16px;
+    text-align: center;
+}
+
+.social-icon i:hover {
+    background-color: #ccc;
+    border-radius: 50%;
+}
+.social-icon a i {
+    margin-left: 6px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.support-text {
+    width: 100%;
+    padding-top: 32px;
+    
+}
+.support-text a {
+    text-decoration: none;
+    color: #333;
+
+}
+.support-text a:hover {
+    text-decoration: underline;
+}
+.license-text {
+    margin-top: 32px;
+    color: #00000094;
+    padding-bottom: 32px;
+    margin-left: 32px;
+}
+@keyframes fadeIn {
+    from {
+         transform: rotate(100deg);
+    }
+    to {
+         transform: rotate(1deg);
+    }
+}
+@media (max-width: 1600px) {
+    .col.l-2  {
+        margin: 0 22px;
+    }
+    .support-text {width: 80%;
+        text-align: justify;
+        margin-left: 32px
+    }
+    .support-text a {
+        line-height: 32px;
+    }
+}
+@media (max-width :739px) {
+    .header-button {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .baner {
+        display:flex;
+    }
+
+    .baner-1,
+    .baner-3,
+    .baner-5 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .baner .col img {
+        width: 100vw;
+        height: 100%;
+    }
+    .support-text {
+        margin-left: 5%;
+        text-align: justify;
+        margin-left: 32px;
+    }
+}

@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.l-3 a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.l-3 a span {
+    margin-right: 8px;
+    background-color: orange;
+}
+.l-3 h1 {
+    font-size: 20px;
+    cursor: pointer;
+}
+.container {
+    overflow: hidden;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding-left: 2%;
+    margin-top: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #ccc;
+}
+.col-1 {
+    display: flex;
+    
+}
+.header-logo {
+    padding-left: 16px;
+    color: red;
+    /* width: 40px;
+    height: 100px; */
+}
+.col-2 {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.col-2 input {
+    width: 80%;
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 0px;
+}
+.col-2 .search-btn {
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-left: -48px;
+    
+}
+.col-2 .search-btn:hover {
+    background-color: #ccc;
+
+}
+.col-2 .voice {
+    padding-left: 16px;
+    cursor: pointer;
+
+}
+.col-3 {
+    min-width: 13%;
+}
+.col-3 span {
+    margin: 0 4px;
+    cursor: pointer;
+}
+.container-content {
+    margin-top: 20px;
+}
+.bar {
+    display: block;
+}
+.bar li {
+    list-style-type: none;
+    display: block;
+}
+.bar li:hover a {
+    background-color: #ccc;
+    display: block;
+
+}
+.bar li a{
+    color: black;
+    opacity: 0.6;
+    text-decoration: none;
+    display: flex;
+    line-height: 30px;
+}
+.bar li a span {
+     line-height: 28px;
+     margin-right: 12px;    
+}
+.l-12 {
+    border-radius: 10px;
+}
+.l-10 {
+    background-color: #eee;
+}
+a {
+    text-decoration: none;
+}
+.l-2.open {
+    display: block;
+}
+@media (min-width: 740px) {
+    img {
+        height: 20vh;
+    }
+}
+@media (max-width :739px) {
+    .c-12 {
+        display: flex;
+        margin: 12px;
+        justify-content: center;
+    }
+    img {
+        height: 20vh;
+    }
+}
